@@ -1,0 +1,9 @@
+[
+    {
+      "name": "dmytrobeloplotovinvalidalert",
+      "from": "2000",
+      "to": "5000",
+      "sms": "No",
+      "email": "No"
+    }
+  ]

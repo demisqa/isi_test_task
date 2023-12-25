@@ -1,0 +1,37 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Compiled Python files
+__pycache__/
+*.pyc
+
+# Local configuration files
+.env
+
+# Pytest cache
+.cache/
+pytest_cache/
+
+# Logs
+*.log
+
+# Temporary files
+*.swp
+*.swo
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+
+# Editor-specific files
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
