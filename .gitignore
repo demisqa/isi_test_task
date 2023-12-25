@@ -35,3 +35,6 @@ htmlcov/
 
 # Windows
 Thumbs.db
+
+#Allure report files
+allure_results/

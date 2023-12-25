@@ -56,8 +56,7 @@ class AlertsPage(BasePage):
         actual_notify_message_text = notify_message.text.lower()
         assert expected_notify_message_text in actual_notify_message_text, \
             f"Should be message with text '{expected_notify_message_text}', " \
-            f"but now text is '{actual_notify_message_text}'"
-        
+            f"but now text is '{actual_notify_message_text}'" 
         
     def should_be_success_update_message(self):
         self.is_element_present(*NotificationMessageLocators.NOTIFY_MESSAGE)

@@ -5,6 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 class BasePage():
+   
     def __init__(self, browser : WebDriver, url, timeout=10):
         self.browser = browser
         self.url = url

@@ -24,7 +24,3 @@ class LoginPage(BasePage):
 
         log_in_button = self.browser.find_element(*LoginPageLocators.LOG_IN_BUTTON)
         log_in_button.click()
-
-        
-
-        
