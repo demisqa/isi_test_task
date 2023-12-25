@@ -49,6 +49,16 @@ class AlertsPage(BasePage):
             f"Should be message with text '{expected_success_add_message_text}', " \
             f"but now text is '{actual_success_add_message_text}'"
         
+    def should_be_unsuccess_add_message(self):
+        self.is_element_present(*NotificationMessageLocators.NOTIFY_MESSAGE)
+        notify_message = self.browser.find_element(*NotificationMessageLocators.NOTIFY_MESSAGE)
+        expected_notify_message_text = "ensure this value is less than or equal to 212.0."
+        actual_notify_message_text = notify_message.text.lower()
+        assert expected_notify_message_text in actual_notify_message_text, \
+            f"Should be message with text '{expected_notify_message_text}', " \
+            f"but now text is '{actual_notify_message_text}'"
+        
+        
     def should_be_success_update_message(self):
         self.is_element_present(*NotificationMessageLocators.NOTIFY_MESSAGE)
         data = self.fills_load_update_data()

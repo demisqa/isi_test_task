@@ -1,4 +1,3 @@
-import time
 from selenium.webdriver.remote.webdriver import WebDriver
 from pages.alerts_page import AlertsPage
 
@@ -15,6 +14,7 @@ class TestAlertsPage:
         alerts_page = AlertsPage(browser, browser.current_url)
         alerts_page.go_to_alert_tab()
         alerts_page.add_alert(valid_data=False)
+        alerts_page.should_be_unsuccess_add_message()
         alerts_page.check_empty_alert_table(valid_data=False)
 
     def test_update_existed_alert_with_valid_data(self, browser : WebDriver, teardown_existing_alert):

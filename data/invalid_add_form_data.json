@@ -1,7 +1,7 @@
 [
     {
       "name": "dmytrobeloplotovinvalidalert",
-      "from": "2000",
+      "from": "40",
       "to": "5000",
       "sms": "No",
       "email": "No"
