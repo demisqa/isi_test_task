@@ -5,6 +5,7 @@ from .locators import LoginPageLocators
 
 
 class LoginPage(BasePage):
+    
     def login_in_as_authorized_user(self):
         load_dotenv()
         authorized_username = os.getenv("USERNAME")
