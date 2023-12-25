@@ -49,6 +49,17 @@ to install requirements.
 
 I use webdriver-manger from pip3, so you don't need to set a path to your WebDriver.
 
+Also, it's required to do some steps:
+
+1. Create .env file in the root of this project (this file has already been added to .gitignore)
+2. Add current code to .env file:
+
+```
+USERNAME = ""
+PASSWORD = ""
+```
+and in quotes put your credentials.
+
 For run tests with future allure report generating use the command from the root of project:
 
 ```
